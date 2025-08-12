@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+  <title>Foodiee's Kitchen</title>
+  <style>
+    body{ 
+        font-family: Arial, sans-serif; 
+        margin: 0; padding: 0;
+        background-color: #fff8f0;
+        line-height: 1.6; 
+    }
+    header{ 
+        background: #800000; 
+        color: white; 
+        padding: 1rem; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav a{ 
+        margin: 0 1em; 
+        color: white; 
+        text-decoration: none; 
+        font-weight: bold; 
+    }
+    .hero{ 
+        background: #f4f4f4; 
+        text-align: center; 
+        padding: 2rem; 
+    }
+    .btn{ 
+        background: #ff6600; 
+        color: white; padding: 
+        0.5em 1em; 
+        border-radius: 5px; 
+        text-decoration: none; 
+    }
+    section{ 
+        padding: 2rem; 
+    }
+    footer{ 
+        background: #222; 
+        color: white; 
+        text-align: center; 
+        padding: 1rem; 
+    }
+    .menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+ .menu-item {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 260px;
+  text-align: center;
+ }
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
+ <header>
+    <h1>Foodiee's Kitchen</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#menu">Menu</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Foodiee's Kitchen</h2>
+    <p>Where culinary delight meets tradition</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </section>
+
+  <section id="about">
+    <h2>Why Choose Us?</h2>
+    <p>Discover the extraordinary at Foodiee's Kitchen. We commit to quality, taste, and exceptional service.</p>
+    <div style="display: flex; gap: 2em; flex-wrap: wrap;">
+      <div><h3>🍽️ Fresh Ingredients</h3><p>Only the freshest produce for flavor-packed dishes.</p></div>
+      <div><h3>👨‍🍳 Skilled Chefs</h3><p>Expert chefs bringing years of experience.</p></div>
+      <div><h3>🌟 Top-Rated Service</h3><p>Warm service and a delightful experience every time.</p></div>
+    </div>
+    </section>
+    <blockquote style="margin-top: 1em; font-style: italic; background: #f9f9f9; padding: 1em; border-left: 5px solid #ccc;">
+      “The best dining experience I’ve had in years. Amazing food, great vibe!” – Priya S.
+    </blockquote>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Andhra Chicken Curry">
+            <h3>Andhra Chicken Curry</h3>
+            <p>Spicy, traditional, and unforgettable. ₹280</p>
+          </div>
+      
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80" alt="Veg Thali">
+            <h3>Veg Thali</h3>
+            <p>A wholesome plate of South Indian flavors. ₹200</p>
+          </div>
+      
+          <div class="menu-item">
+            <img src="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2.jpg" alt="Paneer Butter Masala">
+            <h3>Paneer Butter Masala</h3>
+            <p>Creamy cottage cheese curry. ₹250</p>
+          </div>
+      
+          <div class="menu-item">
+            <img src="https://ruralkingz.com/wp-content/uploads/2020/08/fried.jpg" alt="Fry Bit Biryani">
+            <h3>Frybit Biryani</h3>
+            <p>Aromatic and spicy rice with fried chicken. ₹300<p>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Mutton Rogan Josh">
+            <h3>Mutton Rogan Josh</h3>
+            <p>Rich and flavorful Kashmiri-style curry. ₹320</p>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Andhra Chicken Curry">
+            <h3>Andhra Chicken Curry</h3>
+            <p>Spicy, traditional, and unforgettable. ₹280</p>
+          </div>
+        </div>                 
+      </section>
+  <section id="reservation">
+    <form>
+      <label>Full Name:</label><br>
+      <input type="text"><br><br>
+  
+      <label>Date:</label><br>
+      <input><br><br>
+  
+      <label for="time">Time:</label><br>
+      <input type="time"><br><br>
+  
+      <label for="people">Number of Guests:</label><br>
+      <input type="number"><br><br>
+      <button type="submit" class="btn">Book Table</button>
+    </form>
+  </section>
+  <section id="shop">
+    <h2>Online Shop</h2>
+    <p>Order your favorite dishes and merchandise directly from our online store.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@foodieeskitchen.com<br>Phone: (123) 456-7890<br>📍 Hitech City, Hyderabad</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Foodiee's Kitchen. All rights reserved.</p>
+  </footer>
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="position: fixed; bottom: 20px; right: 20px; background: #ff6600; color: white; border: none; padding: 0.5em 1em; border-radius: 5px;">↑ Top</button>
+</body>
+</html>
